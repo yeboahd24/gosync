@@ -1,0 +1,16 @@
+sync:
+  ignore_patterns:
+    - "*.tmp"
+    - ".git/"
+    - "node_modules/"
+    - "__pycache__/"
+  block_size: 4096
+  compression: true
+
+encryption:
+  enabled: false
+  key_file: "~/.gosync/keys/master.key"
+
+watch:
+  debounce_ms: 100
+  recursive: true

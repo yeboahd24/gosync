@@ -1,0 +1,15 @@
+sync:
+  blockSize: 4096  # Block size in bytes for file comparison
+  ignorePatterns:  # Patterns to ignore during sync
+    - ".git/"
+    - "*.tmp"
+    - "*.swp"
+
+encryption:
+  keyFile: ""  # Path to encryption key file (only needed if using encryption)
+
+remote:
+  host: "remote-server.com"    # The remote machine's hostname or IP
+  port: 22                     # SSH port (default is 22)
+  username: "your-username"    # Your SSH username
+  key_file: "~/.ssh/id_rsa"   # Path to your SSH private key
